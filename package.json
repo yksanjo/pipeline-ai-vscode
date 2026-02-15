@@ -1,0 +1,24 @@
+{
+  "name": "pipeline-ai-vscode",
+  "displayName": "Pipeline AI",
+  "description": "Generate CI/CD pipelines directly from VS Code",
+  "version": "1.0.0",
+  "publisher": "yksanjo",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other", "Programming Languages"],
+  "activationEvents": ["onCommand:pipeline-ai.generate"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "pipeline-ai.generate", "title": "Pipeline AI: Generate Pipeline" }
+    ],
+    "configuration": {
+      "title": "Pipeline AI",
+      "properties": {
+        "pipelineAI.openAIKey": { "type": "string", "description": "OpenAI API Key" },
+        "pipelineAI.defaultLanguage": { "type": "string", "default": "nodejs" },
+        "pipelineAI.defaultPlatform": { "type": "string", "default": "github-actions" }
+      }
+    }
+  }
+}
