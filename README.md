@@ -1,60 +1,84 @@
-# 🔧 Pipeline AI - VS Code Extension
+# pipeline-ai-vscode
 
-Generate CI/CD pipelines directly from VS Code using AI.
+## Detailed Description
 
-## Features
+pipeline-ai-vscode is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- 🎯 **Generate pipelines from VS Code** - No CLI needed
-- 🤖 **AI-Powered** - Uses GPT-4 for intelligent generation
-- 📁 **Auto file creation** - Creates pipeline files in correct locations
-- ⚙️ **Configurable** - Set default language and platform
+## Problem Statement
 
-## Installation
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-1. Open VS Code
-2. Search for "Pipeline AI" in Extensions marketplace
-3. Click Install
+## Solution Overview
 
-Or manually:
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-code --install-extension yksanjo.pipeline-ai-vscode
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-1. Open a workspace folder
-2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows)
-3. Type "Pipeline AI: Generate Pipeline"
-4. Follow the prompts
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Configuration
+## Quality Standards
 
-In VS Code settings (`settings.json`):
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```json
-{
-  "pipelineAI.openAIKey": "your-api-key",
-  "pipelineAI.defaultLanguage": "nodejs",
-  "pipelineAI.defaultPlatform": "github-actions"
-}
-```
+## Security
 
-Or via Settings UI:
-- `pipelineAI.openAIKey` - OpenAI API Key
-- `pipelineAI.defaultLanguage` - Default programming language
-- `pipelineAI.defaultPlatform` - Default CI/CD platform
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-## Commands
+## Contributing
 
-- `Pipeline AI: Generate Pipeline` - Generate a new pipeline
-- `Pipeline AI: Select Language` - Choose default language
-- `Pipeline AI: Select Platform` - Choose default platform
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-## Requirements
+## Roadmap
 
-- VS Code 1.85+
-- OpenAI API Key (optional, uses fallback templates)
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
